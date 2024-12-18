@@ -1,0 +1,73 @@
+.month {
+    display: none;
+    font-family: "Josefin Slab";
+}
+
+.month.active {
+    display: block;
+}
+
+.icon {
+    height: 20px;
+    vertical-align: bottom;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* 7 columns for days of the week */
+    gap: 5px;
+    padding: 20px;
+    background-color: #252422;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Styling for day names (Sun, Mon, etc.) */
+.day {
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px 0;
+    background-color: #fffcf2;
+    border-radius: 4px;
+}
+
+/* Styling for date cells */
+.date-container {
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+    height: 70px;
+    width: 70px;
+    font-size: 18px;
+    background-color: #ccc5b9;
+    border: 1px solid #403d39;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(255, 61, 57, 0.2);
+}
+
+/* Current day highlight */
+.date-container.current {
+    background-color: #4a90e2;
+    color: white;
+    font-weight: bold;
+    border-radius: 50%;
+}
+
+/* Add a hover effect for interactivity */
+.date-container:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.above,
+.below {
+    font-size: 10px;
+    padding: 0;
+}
+
+.date-container hr {
+    border: 0.5px solid white;
+    border-radius: 0.5px;
+}

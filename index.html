@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+    <head>
+        <title>My First Web Page</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/objectSupport.min.js"></script>
+        <script src="script.js"></script>
+
+        <script>
+            let c = new Calendar({
+                start_date: "2024-01-01",
+                colors: {
+                    "2024-10-02": "#219ebc",
+                },
+                aboves: {
+                    "2024-10-02": "Mumbai",
+                },
+            });
+            c.render();
+        </script>
+    </body>
+</html>
